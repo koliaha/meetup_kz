@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-553DCWH');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <title>meet up</title>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-553DCWH" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="container">
+        <div class="top__spinner__container">
+            <img src="./assets/spinning_element.png" alt="" class="top__spinner">
+        </div>
+        <section class="nav__bar">
+            <a href="https://gomobile.ai/">
+                <div class="logo"></div>
+            </a>
+            <ul class="menu inv">
+                <img src="./assets/cross_error.svg" onclick="hideMenu()" alt="" class="mobile menu__cross">
+                <a href="#program">
+                    <li>Программа</li>
+                </a>
+                <a href="#speakers">
+                    <li>Спикеры</li>
+                </a>
+                <a href="#registration">
+                    <li>Регистрация</li>
+                </a>
+                <a href="#about">
+                    <li>О нас</li>
+                </a>
+                <a href="#contacts">
+                    <li>Контакты</li>
+                </a>
+            </ul>
+            <img src="./assets/menu.svg" onclick="showMenu()" alt="" class="menu__icon mobile">
+        </section>
+        <section class="event__section__top">
+            <h3 class="event__name">MeetUp Go Mobile</h3>
+            <h1 class="event__description">Web & App: повышение эффективности рекламных кампаний при помощи технологий
+            </h1>
+            <p class="event__info">8 декабря <span class="event__info__time orange">11:00-14:00</span> <br> Алматы,
+                Проспект
+                Сейфуллина, 617</p>
+            <a href="#registration">
+                <div class="btn__cta">Зарегистрироваться</div>
+            </a>
+        </section>
+        <section class="event__content__section">
+            <p class="event__content__hook">По прогнозам Statista, в 2022 году больше половины рекламных расходов <br> в
+                Казахстане будут приходиться на digital, и его доля будет расти. <br> Digital-специалистам важно всегда
+                быть в
+                курсе последних трендов <br> и прогнозов, а также постоянно прокачивать свои знания в медийном <br> и
+                performance-маркетинге, в web и app.</p>
+            <h1 class="event__content__within">В рамках MeetUp Go Mobile:</h1>
+            <div class="event__content__themes__container">
+                <div class="event__content__theme__container">
+                    <img src="./assets/arrows_icon.svg" alt="" class="event__content__theme__icon">
+                    <p class="event__content__theme__text">Обсудим текущее состояние <br class="desktop"> digital-рынка
+                        Казахстана,<br class="desktop"> тренды и возможности</p>
+                </div>
+                <div class="event__content__theme__container">
+                    <img src="./assets/star_icon.svg" alt="" class="event__content__theme__icon">
+                    <p class="event__content__theme__text">Поговорим про web- <br class="desktop"> и app-performance</p>
+                </div>
+                <div class="event__content__theme__container">
+                    <img src="./assets/arrow_wall_icon.svg" alt="" class="event__content__theme__icon">
+                    <p class="event__content__theme__text">Расскажем про специфику <br class="desktop"> работы <br
+                            class="mobile"> с медийными<br> и performance-каналами</p>
+                </div>
+            </div>
+        </section>
+        <section id="program" class="program__section">
+            <h1 class="program__header">Программа</h1>
+            <div class="program__timetable__container">
+                <div class="program__timetable__row">
+                    <div class="program__timetable__row__time orange">11:00</div>
+                    <div class="program__timetable__row__text">
+                        <p class="program__timetable__row__text__paragraph">Сбор гостей в офисе Go Mobile,
+                            welcome-кофе/чай</p>
+                    </div>
+                </div>
+                <div class="program__timetable__row">
+                    <div class="program__timetable__row__time orange">11:20</div>
+                    <div class="program__timetable__row__text">
+                        <p class="program__timetable__row__text__paragraph">Вступительное слово ЦАРА</p>
+                        <p class="program__timetable__row__text__speaker"><span
+                                class="program__timetable__row__text__speaker__name orange">Виталий Савков,</span>
+                            Генеральный <br class="mobile"> директор Vi Digital Казахстан,<br class="mobile">
+                            Председатель Digital Community ЦАРА
+                        </p>
+                        <p class="program__timetable__row__text__speaker"><span
+                                class="program__timetable__row__text__speaker__name orange">Анна Тютькова,</span>
+                            Исполнительный <br class="mobile"> директор ОЮЛ «ЦАРА»
+                        </p>
+                    </div>
+                </div>
+                <div class="program__timetable__row">
+                    <div class="program__timetable__row__time orange">11:40</div>
+                    <div class="program__timetable__row__text">
+                        <p class="program__timetable__row__text__paragraph">На каких performance-инструментах
+                            следует сфокусироваться при продвижении мобильных приложений</p>
+                        <p class="program__timetable__row__text__speaker"><span
+                                class="program__timetable__row__text__speaker__name orange">Дмитрий Терехов,</span>
+                            Business <br class="mobile"> Development Director Go Mobile</p>
+                    </div>
+                </div>
+                <div class="program__timetable__row">
+                    <div class="program__timetable__row__time orange">12:10</div>
+                    <div class="program__timetable__row__text">
+                        <p class="program__timetable__row__text__paragraph">Специфика работы с digital аналитикой на
+                            западе</p>
+                        <p class="program__timetable__row__text__speaker"><span
+                                class="program__timetable__row__text__speaker__name orange">Ксения Зазулова,</span>
+                            Chief business officer, рекламный холдинг АДВ</p>
+                    </div>
+                </div>
+                <div class="program__timetable__row">
+                    <div class="program__timetable__row__time orange">12:30</div>
+                    <div class="program__timetable__row__text">
+                        <p class="program__timetable__row__text__paragraph">Кофе-брейк</p>
+                    </div>
+                </div>
+                <div class="program__timetable__row">
+                    <div class="program__timetable__row__time orange">12:45</div>
+                    <div class="program__timetable__row__text">
+                        <p class="program__timetable__row__text__paragraph">Стратегический подход к работе <br
+                                class="mobile"> с web-performance <br class="desktop"> и медийными каналами для кратного
+                            роста бизнеса</p>
+                        <p class="program__timetable__row__text__speaker"><span
+                                class="program__timetable__row__text__speaker__name orange">Андрей Блюменталь,</span>
+                            Worldwide Managing Director Go Mobile</p>
+                    </div>
+                </div>
+                <div class="program__timetable__row">
+                    <div class="program__timetable__row__time orange">13:15</div>
+                    <div class="program__timetable__row__text">
+                        <p class="program__timetable__row__text__paragraph">Data-driven подход к influencer-маркетингу
+                        </p>
+                        <p class="program__timetable__row__text__speaker"><span
+                                class="program__timetable__row__text__speaker__name orange">Глеб Годунов,</span> CEO Go
+                            Influence</p>
+                    </div>
+                </div>
+                <div class="program__timetable__row">
+                    <div class="program__timetable__row__time orange">13:40</div>
+                    <div class="program__timetable__row__text">
+                        <p class="program__timetable__row__text__paragraph">Свободное общение и интенсивный нетворкинг
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <a href="#registration">
+                <div class="btn__cta">Зарегистрироваться</div>
+            </a>
+        </section>
+        <section id="speakers" class="speakers__section">
+            <h1 class="speakers__header">Спикеры</h1>
+            <div class="speakers__cards__container">
+                <div class="speaker__card">
+                    <img src="./assets/speaker0.png" alt="" class="speaker__card__image">
+                    <h1 class="speaker__name">Андрей Блюменталь</h1>
+                    <p class="speaker__position">Worldwide Managing Director <br> Go Mobile</p>
+                </div>
+                <div class="speaker__card">
+                    <img src="./assets/speaker1.png" alt="" class="speaker__card__image">
+                    <h1 class="speaker__name">Дмитрий Терехов</h1>
+                    <p class="speaker__position">Business Development Director <br> Go Mobile</p>
+                </div>
+                <div class="speaker__card">
+                    <img src="./assets/speaker2.png" alt="" class="speaker__card__image">
+                    <h1 class="speaker__name">Глеб Годунов</h1>
+                    <p class="speaker__position">CEO Go Influence</p>
+                </div>
+                <div class="speaker__card">
+                    <img src="./assets/speaker3.png" alt="" class="speaker__card__image">
+                    <h1 class="speaker__name">Ксения Зазулова</h1>
+                    <p class="speaker__position">Chief business officer АДВ</p>
+                </div>
+                <div class="speaker__card">
+                    <img src="./assets/speaker4.png" alt="" class="speaker__card__image">
+                    <h1 class="speaker__name">Анна Тютькова</h1>
+                    <p class="speaker__position">Исполнительный директор <br> ОЮЛ «ЦАРА»</p>
+                </div>
+                <div class="speaker__card">
+                    <img src="./assets/speaker5.png" alt="" class="speaker__card__image">
+                    <h1 class="speaker__name">Виталий Савков</h1>
+                    <p class="speaker__position">Генеральный директор Vi Digital <br> Казахстан,Председатель Digital
+                        <br> Community ЦАРА
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="registration" class="form__section">
+            <div class="form__modal inv">
+                <div class="form__modal__container">
+                    <h3 class="form__modal__header">
+                        Спасибо за регистрацию! <br> Будем рады видеть вас на MeetUp Go Mobile
+                    </h3>
+                    <p class="form__modal__paragraph">
+                        Мы вышлем вам на почту
+                        организационные детали накануне мероприятия
+                    </p>
+                    <img onclick="closeModal()" src="./assets/close_icon.svg" alt="" class="close__icon">
+                </div>
+            </div>
+            <div class="form__text__container">
+                <h1 class="form__header">Давайте вместе <br> прокачивать digital!</h1>
+                <p class="form__paragraph">Регистрация на MeetUp Go Mobile</p>
+            </div>
+            <form action="" method="post" id="survey_form" name="meetReport" class="">
+                <input required name="name" placeholder="Имя Фамилия" id="inputName" class="form__input">
+                <span id="signName">*</span>
+                <input required name="company" placeholder="Компания" id="inputCompany" class="form__input">
+                <span id="signCompany">*</span>
+                <input required name="position" placeholder="Должность" id="inputPosition" class="form__input"> <span
+                    id="signPosition">*</span>
+                <input type="email" required name="email" placeholder="Почта" id="inputEmail" class="form__input"> <span
+                    id="signEmail">*</span>
+                <input name="number" placeholder="Номер телефона/Телеграм" id="inputNumber" class="form__input">
+                <p class="input__disclaimer">* — поля, обязательные для заполнения</p>
+                <div id="submit_btn" class="submit btn__cta" type="submit">Зарегистрироваться</div>
+                <p class="btn__disclaimer">Нажимая кнопку «Зарегистрироваться», вы даёте свое согласие на обработку
+                    персональных данных и соглашаетесь <a href="./policy.pdf" target="_blank"> с политикой обработки персональных данных</a></p>
+            </form>
+        </section>
+        <img src="./assets/about_arrow_left.svg" alt="" class="mobile about__arrow__top">
+        <section id="about" class="about__section">
+            <h1 class="about__header">О нас</h1>
+            <div class="about__company__container">
+                <h1 class="about__company__header">Go Mobile — <br> для нас digital больше, чем просто закупка трафика
+                </h1>
+                <p class="about__company__paragraph">Go Mobile существует на рынке уже 6 лет, <br> за это время мы
+                    успели
+                    поработать с более чем 600 клиентами из разных точек мира. Благодаря этому наша команда сильно
+                    прокачала свою экспертизу во всех направлениях web- <br> и app-маркетинга. Мы работаем как с
+                    медийной,
+                    так и с performance-рекламой, а также создаем собственные инструменты, которые позволяют заметно
+                    повысить эффективность рекламных кампаний. У нас есть собственная media-programmatic платформа Go
+                    NET <br> и deep learning решение Go Predicts.</p>
+            </div>
+        </section>
+        <img src="./assets/about_arrow_right.svg" alt="" class="mobile about__arrow__bot">
+        <section id="contacts" class="address__section">
+            <h1 class="address__header">Адрес</h1>
+            <div class="address__container">
+                <div class="address__container__text">
+                    <p class="address__location orange">Алматы, Проспект Сейфуллина, 617</p>
+                    <p class="address__description">
+                        Наш офис находится на 4 этаже ТРЦ Forum. Ориентиры — указатели CoWorking и наши коллеги, которые
+                        вас встретят
+                    </p>
+                </div>
+                <img src="./assets/adress_map.png" alt="" class="address__map__image">
+            </div>
+            <p class="address__email">По вопросам участия: <br> <a href="mailto:pr@gomobile.ru"><span
+                        class="email__orange orange">pr@gomobile.ru</span></a>
+            </p>
+        </section>
+        <footer>
+            <div class="footer__spinner desktop">
+                <img src="./assets/spinning_element.png" alt="" class="footer__spinner__image">
+            </div>
+            <div class="footer__contacts">
+                <h1 class="contact__header">MeetUp<br>Go Mobile</h1>
+                <div class="contact__social__container">
+                    <a href="https://www.linkedin.com/company/gomobilemarketing/"><img src="./assets/linkedin.svg"
+                            alt="" class="contact__social__icon linkedin"></a>
+                    <a href="https://www.facebook.com/profile.php?id=100088046504038"><img src="./assets/fb.svg" alt=""
+                            class="contact__social__icon fb"></a>
+                </div>
+                <div class="contact__paragraph"> <a href="mailto:hi@gomobile.ru">hi@gomobile.ru</a> <span> |
+                        +7 (771) 780-89-69</span>
+                </div>
+                <a href="https://gomobile.ai/"><img src="./assets/footer_logo_white.svg" alt=""
+                        class="footer__contacts__logo"></a>
+                <a href="./policy.pdf" target="_blank"><p class="footer__disclaimer__personal">Политика обработки персональных данных</p></a>
+                <a href="./policy.pdf" target="_blank"><p class="footer__disclaimer__confident">Политика конфиденциальности</p></a>
+            </div>
+            <div class="footer__spinner mobile">
+                <img src="./assets/spinning_element.png" alt="" class="footer__spinner__image">
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="./assets/jquery.serialize-object.min.js"></script>
+    <script>
+        $(() => {
+            if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                $('.menu').removeClass('inv')
+            }
+        });
+        $.fn.serializeObject = function () {
+            var o = {};
+            var a = this.serializeArray();
+            $.each(a, function () {
+                if (o[this.name]) {
+                    if (!o[this.name].push) {
+                        o[this.name] = [o[this.name]];
+                    }
+                    o[this.name].push(this.value || '');
+                } else {
+                    o[this.name] = this.value || '';
+                }
+            });
+            return o;
+        };
+        let modalState = false
+        let nameState = false
+        let companyState = false
+        let positionState = false
+        const isValidEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+        const isValidName = /^\s*\S+.*/;
+        const isValidCompany = /^\s*\S+.*/;
+        const isValidPosition = /^\s*\S+.*/;
+        var form = document.getElementById("survey_form");
+        $('#inputEmail').on('input', () => {
+            let emailValue = $("#inputEmail")[0].value
+            console.log(emailValue)
+            if (!emailValue || !emailValue.match(isValidEmail)) {
+                wrongEmail()
+            } else rightEmail()
+        })
+        var $form = $('form#survey_form'),
+            url_form = 'https://script.google.com/macros/s/AKfycbyusX4bnR-wJZVDkcKVPySZbFkPPUewKbomC92TDiZXlqbgKLqGURvP_0jztkdib7gX/exec'
+        $('#submit_btn').on('click', function (e) {
+            e.preventDefault();
+            let emailValue = $("#inputEmail")[0].value
+            let nameValue = $("#inputName")[0].value
+            let companyValue = $("#inputCompany")[0].value
+            let positionValue = $("#inputPosition")[0].value
+            if (nameValue && nameValue.match(isValidName)) {
+                rightName()
+            }
+            if (companyValue && companyValue.match(isValidCompany)) {
+                rightCompany()
+            }
+            if (positionValue && positionValue.match(isValidPosition)) {
+                rightPosition()
+            }
+
+            if (emailValue && emailValue.match(isValidEmail) && nameValue && nameValue.match(isValidName)
+                && positionValue && positionValue.match(isValidPosition)
+                && companyValue && companyValue.match(isValidCompany)) {
+                regComplete()
+                var jqxhr_form = $.ajax({
+                    url: url_form,
+                    method: "GET",
+                    dataType: "json",
+                    data: $form.serializeObject()
+                }).success(function (e) {
+                    console.log(e);
+                }
+                );
+            }
+            else if (!nameValue || !nameValue.match(isValidName)) {
+                wrongName()
+            }
+            else if (!companyValue || !companyValue.match(isValidCompany)) {
+                wrongCompany()
+            }
+
+            else if (!positionValue || !positionValue.match(isValidPosition)) {
+                wrongPosition()
+            }
+            else wrongEmail()
+        })
+        const regComplete = () => {
+            $('.form__modal').removeClass('inv')
+            $('#inputEmail').removeClass('wrong')
+            $('#inputName').removeClass('wrong')
+            $('#inputCompany').removeClass('wrong')
+            $('#inputPosition').removeClass('wrong')
+            $('#submit_btn').text('Зарегистрироваться')
+            $('#submit_btn').css('background', '#FF7323')
+            $('#signEmail').html('<img src="./assets/check_mark.svg"/>')
+            $('#signName').html('<img src="./assets/check_mark.svg"/>')
+            $('#signPosition').html('<img src="./assets/check_mark.svg"/>')
+            $('#signCompany').html('<img src="./assets/check_mark.svg"/>')
+            console.log('complete')
+            modalState = true
+        }
+        const rightCompany = () => {
+            $('#signCompany').html('<img src="./assets/check_mark.svg"/>')
+            $('#inputCompany').removeClass('wrong')
+            $('#submit_btn').text('Зарегистрироваться')
+            $('#submit_btn').css('background', '#FF7323')
+        }
+        const rightName = () => {
+            $('#signName').html('<img src="./assets/check_mark.svg"/>')
+            $('#inputName').removeClass('wrong')
+            $('#submit_btn').text('Зарегистрироваться')
+            $('#submit_btn').css('background', '#FF7323')
+        }
+        const rightPosition = () => {
+            $('#signPosition').html('<img src="./assets/check_mark.svg"/>')
+            $('#inputPosition').removeClass('wrong')
+            $('#submit_btn').text('Зарегистрироваться')
+            $('#submit_btn').css('background', '#FF7323')
+        }
+        const rightEmail = () => {
+            $('#signEmail').html('<img src="./assets/check_mark.svg"/>')
+            $('#inputEmail').removeClass('wrong')
+            $('#submit_btn').text('Зарегистрироваться')
+            $('#submit_btn').css('background', '#FF7323')
+        }
+
+        const wrongEmail = () => {
+            console.log('wrong email')
+            $('#inputEmail').addClass('wrong')
+            $('#inputEmail').focus()
+            $('#signEmail').html('<img src="./assets/cross_error.svg"/>')
+        }
+        const wrongName = () => {
+            console.log('wrong Name')
+            $('#inputName').addClass('wrong')
+            $('#inputName').focus()
+            $('#signName').html('<img src="./assets/cross_error.svg"/>')
+        }
+        const wrongPosition = () => {
+            console.log('wrong Position')
+            $('#inputPosition').addClass('wrong')
+            $('#inputPosition').focus()
+            $('#signPosition').html('<img src="./assets/cross_error.svg"/>')
+        }
+        const wrongCompany = () => {
+            console.log('wrong Company')
+            $('#inputCompany').addClass('wrong')
+            $('#inputCompany').focus()
+            $('#signCompany').html('<img src="./assets/cross_error.svg"/>')
+        }
+        const closeModal = () => {
+            $('.form__modal').addClass('inv')
+            console.log('closed')
+            modalState = false
+        }
+        const hideMenu = () => {
+            $('.menu').addClass('inv')
+            $('.menu__icon').removeClass('inv')
+        }
+        const showMenu = () => {
+            $('.menu__icon').addClass('inv')
+            $('.menu').removeClass('inv')
+        }
+
+    </script>
+</body>
+
+</html>
